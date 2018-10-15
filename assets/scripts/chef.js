@@ -44,9 +44,9 @@ chef.recipes = {
     }
 }
 
-chef.cook = function(recipe, result) {
-    $('.meal-img').html('<img src="' + chef.recipes + '.' + 'result' + [recipe].img + '"');
-    $('.meal-name').html('<h1>' + chef.recipes + '.' + 'result' + [recipe].name + '</h1>');
-    $('.meal-time').html('<p>' + chef.recipes + '.' + 'result' + [recipe].timeToCook + '</p>');
-    $('.meal-history').html('<p>' + chef.recipes + '.' + 'result' + [recipe].history + '</p>');
+chef.cook = function(recipe) {
+    $('.meal-img').attr('src', chef.recipes[recipe].img);
+    $('.meal-name').html('<h1>' + chef.recipes[recipe].name + '</h1>');
+    $('.meal-time').html('<p>' + chef.recipes[recipe].timeToCook + '</p>');
+    $('.meal-history').html('<p>' + chef.recipes[recipe].history + '</p>');
 }

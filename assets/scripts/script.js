@@ -3,5 +3,9 @@ $(document).ready(function() {
 
 	if (result == 'lasagna') {
 		chef.cook(result);
+	} else if(result == 'pizza') {
+		chef.cook(result);
+	} else if(result == 'pasta') {
+		chef.cook(result);
 	}
 });
